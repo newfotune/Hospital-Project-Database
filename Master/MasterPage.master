@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="users_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <link href="../style/style.css" rel="stylesheet" type="text/css"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="menu" id="my_menu">
+        <ul>
+            <li><a href="http://localhost:53523/views/admin/dashboard.aspx">Dash Board</a></li>
+       
+            <li>Doctor
+                <ul>
+                    <li><a href="http://localhost:53523/views/admin/doctor/add_doctor.aspx">Add Doctor</a></li>
+                    <li><a href="http://localhost:53523/views/admin/doctor/update_doctor.aspx">View Doctors</a></li>
+                </ul>
+            </li>
+            <li>Nurses
+                <ul>
+                    <li><a href="http://localhost:53523/views/admin/nurses/add_nurse.aspx">Add Nurse</a></li>
+                    <li><a href="http://localhost:53523/views/admin/nurses/update_nurse.aspx">View Nurses</a></li>
+                </ul>
+            </li>
+            <li>Patient
+                <ul>
+                    <li><a href="http://localhost:53523/views/admin/patients/add_patient.aspx">Add Patient</a></li>
+                    <li><a href="http://localhost:53523/views/admin/patients/update_patient.aspx">View Patients</a></li>
+                    <li><a href="http://localhost:53523/views/admin/patients/check_in.aspx">Check In</a></li>
+                </ul>
+            </li>
+            <li>Facilities
+                <ul>
+                    <li><a href="http://localhost:53523/views/admin/rooms/add_rooms.aspx">Add Rooms</a></li>
+                    <li><a href="http://localhost:53523/views/admin/rooms/view_rooms.aspx">View Rooms</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <form id="form1" runat="server" >
+        <asp:ContentPlaceHolder id="Maincontent" runat="server"> 
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
